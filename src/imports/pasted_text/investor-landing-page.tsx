@@ -378,7 +378,7 @@ Center text below: "All plans include AI chat, document processing, and audit tr
 - Headline: **"Let's Show You What Autonomous Compliance Looks Like"**
 - Subtitle: "Book a 30-minute demo. We'll set up your industry — live — in under 2 minutes."
 - Large email input + "Request Demo" button (gradient CTA, indigo → purple)
-- Below: "Or reach us at hello@animoflow.com"
+- Below: "Or reach us at hello@animoanimo.com"
 - Trust badges row: "SOC 2 (Planned) | GDPR Ready | Enterprise-Grade | Multi-Tenant Isolated"
 
 #### 14. FOOTER

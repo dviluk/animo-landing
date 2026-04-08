@@ -56,11 +56,11 @@ export function Hero() {
           <motion.p className="text-[#64748B] text-[13px]" style={{ fontFamily: "Inter" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
             Trusted by organizations across manufacturing, construction, consulting, healthcare, and more
           </motion.p>
-          <motion.div className="flex gap-3 flex-wrap" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }}>
+          {/* <motion.div className="flex gap-3 flex-wrap" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }}>
             {Array.from({ length: 5 }).map((_, i) => (
               <div key={i} className="w-20 h-8 rounded bg-white/5 border border-white/10" />
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
 
         <motion.div className="lg:col-span-2" initial={{ opacity: 0, x: 60 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3 }}>

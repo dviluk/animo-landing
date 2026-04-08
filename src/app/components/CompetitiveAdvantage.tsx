@@ -3,7 +3,7 @@ import { Check, X, AlertTriangle } from "lucide-react";
 
 const rows = [
   { cap: "Natural language data entry", animo: ["check", "AI form filling via chat"], legacy: ["x", "Manual CRUD forms"], dms: ["x", "Manual"] },
-  { cap: "24/7 autonomous monitoring", animo: ["check", "12 AI agent crews"], legacy: ["x", "Manual periodic checks"], dms: ["x", "None"] },
+  { cap: "24/7 autonomous monitoring", animo: ["check", "AI agent"], legacy: ["x", "Manual periodic checks"], dms: ["x", "None"] },
   { cap: "Document quality + VLM", animo: ["check", "Vision language models"], legacy: ["x", "Basic OCR only"], dms: ["x", "None"] },
   { cap: "Dual-mode compliance", animo: ["check", "Third-party + Internal ops"], legacy: ["warn", "One mode only"], dms: ["x", "None"] },
   { cap: "Human-in-the-loop AI", animo: ["check", "4-level authority gates"], legacy: ["warn", "All-auto or nothing"], dms: ["x", "None"] },

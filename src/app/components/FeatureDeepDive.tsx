@@ -63,7 +63,7 @@ const features = [
   },
   {
     icon: Bot,
-    title: "12 AI Crews. Running 24/7. Zero Coffee Breaks.",
+    title: "AI Agents running 24/7. Zero Coffee Breaks.",
     desc: "Autonomous agents that check compliance daily, validate documents on upload, draft follow-up emails, and prepare audit evidence packages — all while you sleep.",
     badge: "Human-in-the-Loop Safety Gates",
     mockup: (

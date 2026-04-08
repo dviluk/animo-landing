@@ -320,7 +320,7 @@ All cards have "Contact Us" buttons (no public pricing — enterprise sales mode
 - Headline: **"Let's Show You What Autonomous Compliance Looks Like"**
 - Subtitle: "Book a 30-minute demo. We'll set up your industry in real-time."
 - Large email input + "Request Demo" button (gradient)
-- Below: "Or email us at hello@animoflow.com"
+- Below: "Or email us at hello@animoanimo.com"
 - Trust badges: "SOC 2 Type II (Planned) | GDPR Compliant | Enterprise-Ready"
 
 #### 13. FOOTER

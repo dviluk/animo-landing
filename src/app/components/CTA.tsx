@@ -7,7 +7,10 @@ export function CTA() {
   const [email, setEmail] = useState("");
 
   return (
-    <section id="contact" className="relative py-24 overflow-hidden bg-gradient-to-br from-[#0F172A] via-[#1E1B4B] to-[#0F172A]">
+    <section
+      id="contact"
+      className="relative py-24 overflow-hidden bg-gradient-to-br from-[#0F172A] via-[#1E1B4B] to-[#0F172A]"
+    >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-20 left-1/4 w-[500px] h-[500px] rounded-full bg-[#4F46E5]/15 blur-[120px]" />
         <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-[#06B6D4]/10 blur-[100px]" />
@@ -15,11 +18,18 @@ export function CTA() {
 
       <div className="relative max-w-3xl mx-auto px-6 text-center">
         <ScrollReveal>
-          <h2 className="text-[36px] lg:text-[48px] font-[800] text-[#F8FAFC] mb-4 leading-tight" style={{ fontFamily: "Inter" }}>
+          <h2
+            className="text-[36px] lg:text-[48px] font-[800] text-[#F8FAFC] mb-4 leading-tight"
+            style={{ fontFamily: "Inter" }}
+          >
             Let's Show You What Autonomous Compliance Looks Like
           </h2>
-          <p className="text-[#94A3B8] text-[17px] mb-10" style={{ fontFamily: "Inter" }}>
-            Book a 30-minute demo. We'll set up your industry — live — in under 2 minutes.
+          <p
+            className="text-[#94A3B8] text-[17px] mb-10"
+            style={{ fontFamily: "Inter" }}
+          >
+            Book a 30-minute demo. We'll set up your industry — live — in under
+            2 minutes.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-6">
@@ -41,8 +51,17 @@ export function CTA() {
             </motion.button>
           </div>
 
-          <p className="text-[#64748B] text-[13px] mb-10" style={{ fontFamily: "Inter" }}>
-            Or reach us at <a href="mailto:hello@animoflow.com" className="text-[#06B6D4] hover:underline">hello@animoflow.com</a>
+          <p
+            className="text-[#64748B] text-[13px] mb-10"
+            style={{ fontFamily: "Inter" }}
+          >
+            Or reach us at{" "}
+            <a
+              href="mailto:hello@animoanimo.com"
+              className="text-[#06B6D4] hover:underline"
+            >
+              hello@animoanimo.com
+            </a>
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
@@ -52,7 +71,11 @@ export function CTA() {
               { icon: Server, text: "Enterprise-Grade" },
               { icon: Lock, text: "Multi-Tenant Isolated" },
             ].map((b) => (
-              <div key={b.text} className="flex items-center gap-2 text-[#64748B] text-[13px]" style={{ fontFamily: "Inter" }}>
+              <div
+                key={b.text}
+                className="flex items-center gap-2 text-[#64748B] text-[13px]"
+                style={{ fontFamily: "Inter" }}
+              >
                 <b.icon size={14} />
                 <span>{b.text}</span>
               </div>

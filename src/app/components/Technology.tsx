@@ -33,7 +33,7 @@ export function Technology() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal>
+        {/* <ScrollReveal>
           <div className="max-w-2xl mx-auto bg-[#1E293B]/60 backdrop-blur border border-white/10 rounded-2xl overflow-hidden mb-16">
             <div className="flex items-center gap-2 px-5 py-3 border-b border-white/10">
               <div className="w-3 h-3 rounded-full bg-[#F43F5E]" />
@@ -49,7 +49,7 @@ export function Technology() {
               ))}
             </div>
           </div>
-        </ScrollReveal>
+        </ScrollReveal> */}
 
         <div className="grid md:grid-cols-4 gap-6">
           {highlights.map((h, i) => (
