@@ -15,7 +15,7 @@ export function Hero() {
         <div className="lg:col-span-3 space-y-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#F59E0B]/40 bg-[#F59E0B]/10 text-[#F59E0B] text-[13px] font-[500]" style={{ fontFamily: "Inter" }}>
-              <Rocket size={14} /> AI-Powered Compliance for Every Industry
+              <Rocket size={14} /> AI Assurance Platform
             </span>
           </motion.div>
 
@@ -26,9 +26,9 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            AI Agents That Run Your Compliance —{" "}
+            Set the standard.{" "}
             <span className="bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] bg-clip-text text-transparent">
-              While You Run Your Business
+              We'll keep it.
             </span>
           </motion.h1>
 
@@ -39,9 +39,9 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Every organization lives by rules — laws, regulations, standards, internal policies.
-            Animo deploys autonomous AI agents that track obligations, validate evidence, chase gaps,
-            and prepare audits — 24/7, across any industry. All with human-in-the-loop safety.
+            The AI that upholds your rules, validates the evidence, and collects what's
+            missing — your own records and the documents you're waiting on. 24/7, with
+            human-in-the-loop safety.
           </motion.p>
 
           <motion.div className="flex flex-wrap gap-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }}>
@@ -54,7 +54,7 @@ export function Hero() {
           </motion.div>
 
           <motion.p className="text-[#64748B] text-[13px]" style={{ fontFamily: "Inter" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
-            Trusted by organizations across manufacturing, construction, consulting, healthcare, and more
+            For teams who get inspected or asked to prove it.
           </motion.p>
           {/* <motion.div className="flex gap-3 flex-wrap" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }}>
             {Array.from({ length: 5 }).map((_, i) => (
@@ -106,11 +106,11 @@ export function Hero() {
               <div className="space-y-2">
                 <div className="bg-[#4F46E5]/20 border border-[#4F46E5]/30 rounded-lg p-3">
                   <div className="text-[#94A3B8] text-[11px] mb-1" style={{ fontFamily: "Inter" }}>You</div>
-                  <div className="text-white text-[12px]" style={{ fontFamily: "Inter" }}>Show me all expiring certifications this month</div>
+                  <div className="text-white text-[12px]" style={{ fontFamily: "Inter" }}>Show me everything expiring this month</div>
                 </div>
                 <div className="bg-[#06B6D4]/10 border border-[#06B6D4]/20 rounded-lg p-3">
                   <div className="text-[#06B6D4] text-[11px] mb-1" style={{ fontFamily: "Inter" }}>Animo AI</div>
-                  <div className="text-[#E2E8F0] text-[12px]" style={{ fontFamily: "Inter" }}>Found 7 expiring items across 4 vendors. 2 certificates expire this week. Shall I draft follow-ups?</div>
+                  <div className="text-[#E2E8F0] text-[12px]" style={{ fontFamily: "Inter" }}>Found 7 items expiring this month — 2 this week. Shall I draft follow-ups?</div>
                 </div>
               </div>
             </div>

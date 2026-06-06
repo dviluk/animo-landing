@@ -17,7 +17,7 @@ const tiers = [
   {
     name: "Enterprise",
     best: "Large orgs with complex needs",
-    features: ["All modules, all verticals", "Custom record types", "Dedicated success manager", "SLA & full API access", "SSO"],
+    features: ["All modules, all functions", "Custom record types", "Dedicated success manager", "SLA & API access", "Advanced access controls"],
     highlight: false,
   },
 ];

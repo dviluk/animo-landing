@@ -18,7 +18,7 @@ const features = [
     icon: MessageSquare,
     title: "Talk to Your Compliance Data",
     desc: "Natural language everything. Chat, email, or voice — ask questions, create records, run reports, trigger actions. One AI brain handles it all.",
-    badge: "160+ AI-Powered Tools",
+    badge: "Hundreds of automated actions",
     mockup: (
       <div className="space-y-3">
         <div className="bg-[#4F46E5]/20 border border-[#4F46E5]/30 rounded-lg p-3">
@@ -32,7 +32,7 @@ const features = [
             className="text-white text-[13px]"
             style={{ fontFamily: "Inter" }}
           >
-            Show me all vendors with expiring certifications this month
+            Show me everything expiring this month
           </div>
         </div>
         <div className="bg-[#06B6D4]/10 border border-[#06B6D4]/20 rounded-lg p-3">
@@ -46,12 +46,12 @@ const features = [
             className="text-[#E2E8F0] text-[13px]"
             style={{ fontFamily: "Inter" }}
           >
-            I found 7 expiring items across 4 vendors. Want me to draft
-            follow-up emails?
+            I found 7 expiring items across your records and documents. Want
+            me to draft follow-ups?
           </div>
           <div className="mt-2 flex gap-2">
             <span className="px-2 py-0.5 text-[10px] rounded bg-[#10B981]/20 text-[#10B981]">
-              Draft Emails
+              Draft Follow-ups
             </span>
             <span className="px-2 py-0.5 text-[10px] rounded bg-[#4F46E5]/20 text-[#4F46E5]">
               View Details
@@ -64,14 +64,14 @@ const features = [
   {
     icon: Bot,
     title: "AI Agents running 24/7. Zero Coffee Breaks.",
-    desc: "Autonomous agents that check compliance daily, validate documents on upload, draft follow-up emails, and prepare audit evidence packages — all while you sleep.",
+    desc: "Autonomous agents that check compliance daily, validate documents on upload, draft follow-up emails, and prepare evidence packages — all while you sleep.",
     badge: "Human-in-the-Loop Safety Gates",
     mockup: (
       <div className="space-y-2">
         {[
           {
             status: "bg-[#10B981]",
-            text: "ComplianceChecker completed daily scan — 3 gaps found across 2 partners",
+            text: "ComplianceChecker completed daily scan — 3 gaps found across 2 sites",
           },
           {
             status: "bg-[#F59E0B]",
@@ -83,7 +83,7 @@ const features = [
           },
           {
             status: "bg-[#06B6D4]",
-            text: "AuditPreparer assembled Q1 evidence package — 94% complete",
+            text: "EvidencePreparer assembled Q1 evidence package — 94% complete",
           },
         ].map((item, i) => (
           <div
@@ -107,8 +107,8 @@ const features = [
   {
     icon: FileSearch,
     title: "Upload Anything. AI Does the Rest.",
-    desc: "Certificates, permits, licenses, inspection reports, insurance docs — AI reads it, classifies it, extracts key fields, checks it against your requirements, and flags what's wrong. In seconds.",
-    badge: "Vision Language Models + OCR",
+    desc: "Certificates, permits, licenses, inspection reports, training records — AI reads it, classifies it, extracts the key fields, checks it against your requirements, and flags what's wrong. In seconds.",
+    badge: "Reads any document or image",
     mockup: (
       <div className="space-y-3">
         <div className="flex flex-wrap gap-2">
@@ -133,14 +133,14 @@ const features = [
             className="text-[#E2E8F0] text-[13px]"
             style={{ fontFamily: "JetBrains Mono" }}
           >
-            Certificate of Insurance
+            Compliance Certificate
           </div>
         </div>
         <div className="grid grid-cols-3 gap-2">
           {[
             { label: "Expiry", value: "2026-08-15" },
-            { label: "Coverage", value: "$2M" },
-            { label: "Insured", value: "Acme Corp" },
+            { label: "Issued", value: "2025-08-15" },
+            { label: "Ref #", value: "A-2847" },
           ].map((f) => (
             <div
               key={f.label}
@@ -246,7 +246,7 @@ const features = [
   {
     icon: Settings,
     title: "Your Operational Evidence. Digitized. Immutable.",
-    desc: "36+ typed record models — inspections, logs, checklists, incident reports, training records, corrective actions. Each with state-machine-driven lifecycles and append-only correction history.",
+    desc: "47 record types out of the box — inspections, logs, checklists, incident reports, training records, corrective actions — or design your own in plain language. Each with state-driven lifecycles and append-only correction history.",
     badge: "Immutable Evidence Trail",
     mockup: (
       <div className="space-y-3">
@@ -296,8 +296,8 @@ const features = [
   {
     icon: Radar,
     title: "Your AI-Powered Radar. Always Watching.",
-    desc: "Vendor risk scores, communication anomaly detection, meeting intelligence, smart follow-ups, and regulatory change monitoring — all delivered to the right person at the right level.",
-    badge: "10-Source Risk Scoring",
+    desc: "Relationship risk scores, communication anomaly detection, meeting intelligence, smart follow-ups, and regulatory change monitoring — all delivered to the right person at the right level.",
+    badge: "6-Source Risk Scoring",
     mockup: (
       <div className="space-y-2">
         <div className="flex items-center justify-between bg-[#0F172A]/40 rounded-lg p-3 border border-white/5">
@@ -305,7 +305,7 @@ const features = [
             className="text-[#E2E8F0] text-[12px]"
             style={{ fontFamily: "Inter" }}
           >
-            Partner Health
+            Relationship Health
           </span>
           <span
             className="text-[#F59E0B] text-[14px] font-[700]"
@@ -320,7 +320,7 @@ const features = [
             style={{ fontFamily: "Inter" }}
           >
             <AlertTriangle size={11} className="shrink-0" /> Communication
-            silence from Partner X — 14 days, expected: 3 days
+            silence from a key contact — 14 days, expected: 3 days
           </span>
         </div>
         <div className="bg-[#4F46E5]/10 border border-[#4F46E5]/20 rounded-lg p-3">

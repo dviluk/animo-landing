@@ -85,7 +85,7 @@ export function ComplianceProblem() {
         <ScrollReveal>
           <p className="text-center text-[#64748B] text-[16px] max-w-2xl mx-auto leading-[1.7]" style={{ fontFamily: "Inter" }}>
             Whether you're tracking vendor certificates, managing operational inspections, meeting regulatory deadlines,
-            or proving audit readiness — you need a system that never sleeps.
+            or proving you're ready — you need a system that never sleeps.
           </p>
         </ScrollReveal>
       </div>

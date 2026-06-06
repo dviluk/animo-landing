@@ -2,7 +2,7 @@ import { Linkedin, Twitter, Github } from "lucide-react";
 
 const columns = [
   { title: "Product", links: ["Features", "Pricing", "Integrations", "Roadmap", "Documentation"] },
-  { title: "Industries", links: ["Manufacturing", "Construction", "Healthcare", "Pharma", "Services", "Food & Beverage"] },
+  { title: "By Function", links: ["Compliance", "Quality Assurance", "Audit & Assurance", "Vendor Risk", "Governance", "Field Ops / EHS"] },
   { title: "Company", links: ["About", "Careers", "Blog", "Contact"] },
   { title: "Legal", links: ["Privacy Policy", "Terms of Service", "Security"] },
 ];

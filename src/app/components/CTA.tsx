@@ -28,8 +28,7 @@ export function CTA() {
             className="text-[#94A3B8] text-[17px] mb-10"
             style={{ fontFamily: "Inter" }}
           >
-            Book a 30-minute demo. We'll set up your industry — live — in under
-            2 minutes.
+            Book a 30-minute demo. We'll set up your standard — during the call.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-6">
@@ -69,7 +68,7 @@ export function CTA() {
               { icon: Shield, text: "SOC 2 (Planned)" },
               { icon: Globe, text: "GDPR Ready" },
               { icon: Server, text: "Enterprise-Grade" },
-              { icon: Lock, text: "Multi-Tenant Isolated" },
+              { icon: Lock, text: "Your data stays yours" },
             ].map((b) => (
               <div
                 key={b.text}

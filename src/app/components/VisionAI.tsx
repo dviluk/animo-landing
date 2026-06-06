@@ -212,9 +212,9 @@ const scenarios = [
 ];
 
 const cards = [
-  { Icon: Camera, title: "Visual Compliance Verification", desc: "Point your camera at a construction site, a kitchen, a warehouse floor, or a piece of equipment — AI analyzes the image against your compliance rules in real-time. Missing PPE? Fire exit blocked? Expired safety label? Violations detected instantly.", Mockup: ComplianceMockup },
-  { Icon: Video, title: "Activity Recognition & Auto-Logging", desc: "Upload a video or connect a feed — AI watches and understands what's happening. Employee completing a sanitation procedure? Equipment maintenance being performed? Animo recognizes the activity, timestamps it, and automatically creates the operational record — no manual data entry.", Mockup: ActivityMockup },
-  { Icon: Wrench, title: "AI-Guided Visual Assistance", desc: "A technician faces a broken machine they've never seen before. They point their phone camera at it — Animo identifies the equipment, pulls up the manual, and overlays step-by-step repair instructions on the live feed. AR-style guidance, powered by your knowledge base.", Mockup: GuidanceMockup },
+  { Icon: Camera, title: "Visual Compliance Verification", coming: false, desc: "Point your camera at a site, a floor, or a piece of equipment — Animo analyzes the photo against your standards and flags what looks wrong: missing PPE, a blocked exit, an expired label — for your team to review and confirm.", Mockup: ComplianceMockup },
+  { Icon: Video, title: "Activity Recognition & Auto-Logging", coming: false, desc: "Upload a video and Animo watches what's happening. A sanitation procedure being completed? Equipment maintenance underway? It recognizes the activity, timestamps it, and creates the operational record automatically — no manual data entry.", Mockup: ActivityMockup },
+  { Icon: Wrench, title: "AI-Guided Visual Assistance", coming: true, desc: "A technician faces a machine they've never seen. They point their phone at it — Animo identifies the equipment, pulls up the manual, and overlays step-by-step repair instructions on the live feed. AR-style guidance from your knowledge base.", Mockup: GuidanceMockup },
 ];
 
 export function VisionAI() {
@@ -251,25 +251,6 @@ export function VisionAI() {
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        {/* Badge */}
-        <ScrollReveal>
-          <div className="flex justify-center mb-8">
-            <motion.div
-              className="px-5 py-2 rounded-full border text-[13px] font-[700] tracking-wider"
-              style={{
-                background: "linear-gradient(135deg, rgba(245,158,11,0.15) 0%, rgba(251,191,36,0.08) 100%)",
-                borderColor: "rgba(245,158,11,0.3)",
-                color: "#FBBF24",
-                fontFamily: "Inter",
-              }}
-              animate={{ boxShadow: ["0 0 20px rgba(245,158,11,0.15)", "0 0 40px rgba(245,158,11,0.3)", "0 0 20px rgba(245,158,11,0.15)"] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              COMING SOON
-            </motion.div>
-          </div>
-        </ScrollReveal>
-
         {/* Eyebrow */}
         <ScrollReveal>
           <div className="flex justify-center mb-6">
@@ -284,7 +265,7 @@ export function VisionAI() {
               animate={{ boxShadow: ["0 0 10px rgba(245,158,11,0.1)", "0 0 25px rgba(245,158,11,0.25)", "0 0 10px rgba(245,158,11,0.1)"] }}
               transition={{ duration: 2.5, repeat: Infinity }}
             >
-              <Clock size={14} className="inline mr-1" /> COMING Q1 2027
+              <Camera size={14} className="inline mr-1" /> VISUAL EVIDENCE
             </motion.span>
           </div>
         </ScrollReveal>
@@ -295,7 +276,7 @@ export function VisionAI() {
             AI That <span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 bg-clip-text text-transparent">Sees</span> What You Can't
           </h2>
           <p className="text-center text-[17px] text-white/50 max-w-3xl mx-auto mb-4 leading-[1.7]" style={{ fontFamily: "Inter" }}>
-            Document scanning was just the beginning. Animo's next frontier: real-time visual intelligence for compliance verification, guided assistance, and automatic activity recognition — from a single photo or live video feed.
+            Point a camera at your operation and Animo checks it against your standards — turning a photo or a video into an evidence record, automatically. Recognize an activity, flag an issue, log it without anyone typing a thing.
           </p>
           <p className="text-center text-[14px] text-amber-400/60 italic mb-16" style={{ fontFamily: "Inter" }}>
             "Your Eyes on Every Site. Every Process. Every Moment."
@@ -317,6 +298,14 @@ export function VisionAI() {
                         <card.Icon size={20} className="text-amber-400" />
                       </div>
                       <h3 className="text-[17px] font-[700] text-white" style={{ fontFamily: "Inter" }}>{card.title}</h3>
+                      {card.coming && (
+                        <span
+                          className="ml-auto inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#F59E0B]/15 border border-[#F59E0B]/30 text-[#F59E0B] text-[10px] font-[600]"
+                          style={{ fontFamily: "Inter" }}
+                        >
+                          <Clock size={10} /> Coming
+                        </span>
+                      )}
                     </div>
                     <p className="text-[14px] text-white/50 leading-[1.7]" style={{ fontFamily: "Inter" }}>{card.desc}</p>
                   </div>
@@ -378,19 +367,19 @@ export function VisionAI() {
             <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-2xl p-8">
               <Shield className="w-8 h-8 text-amber-400 mx-auto mb-4" />
               <p className="text-[15px] text-white/70 leading-[1.8]" style={{ fontFamily: "Inter" }}>
-                Every visual analysis creates an <span className="text-white font-[700]">immutable evidence record</span> — the original image/video, AI's analysis, confidence scores, detected items, and any auto-created logs. Your visual compliance trail is as audit-defensible as every other record in Animo.
+                Every visual analysis creates an <span className="text-white font-[700]">immutable evidence record</span> — the original image/video, AI's analysis, confidence scores, detected items, and any auto-created logs. Your visual compliance trail is as defensible as every other record in Animo.
               </p>
             </div>
           </div>
         </ScrollReveal>
 
-        {/* Technical preview strip */}
+        {/* Capability strip */}
         <ScrollReveal>
           <div className="max-w-3xl mx-auto bg-black/40 border border-white/5 rounded-xl p-5 overflow-x-auto">
             <div className="text-[11px] text-white/25 leading-[2]" style={{ fontFamily: "JetBrains Mono, monospace" }}>
-              <div><span className="text-amber-400/50">Powered by:</span> Vision Language Models (Qwen2-VL, GPT-4V) + Activity Recognition + Object Detection + OCR</div>
-              <div><span className="text-amber-400/50">Integrations:</span> Mobile camera, CCTV feeds, drone footage, uploaded media</div>
-              <div><span className="text-amber-400/50">Output:</span> Operational records, violation reports, guided workflows, evidence packages</div>
+              <div><span className="text-amber-400/50">Inputs:</span> phone camera, uploaded photos &amp; video</div>
+              <div><span className="text-amber-400/50">Output:</span> evidence records, flagged issues, inspection-ready trail</div>
+              <div><span className="text-amber-400/50">Coming:</span> live site cameras, drone footage, AR-guided assistance</div>
             </div>
           </div>
         </ScrollReveal>

@@ -3,18 +3,21 @@ import { ScrollReveal } from "./ScrollReveal";
 import { Check, Clock } from "lucide-react";
 
 const metrics = [
-  { value: 160, suffix: "+", label: "AI-Powered Tools" },
-  { value: 36, suffix: "+", label: "Operational Record Types" },
-  { value: 6, suffix: "", label: "Industry Verticals Supported" },
-  { value: 92, suffix: "%", label: "Avg Compliance Readiness Score" },
+  { value: 170, suffix: "+", label: "Automated actions" },
+  { value: 47, suffix: "", label: "Record types (or design your own)" },
+  { value: 6, suffix: "", label: "Assurance functions" },
+  { value: 92, suffix: "%", label: "Avg compliance readiness" },
 ];
 
 const milestones = [
-  { date: "Q1 2026", text: "Multi-tenant engine, document processing, compliance scoring", done: true },
-  { date: "Q2 2026", text: "Configurable industry modules, AI onboarding, operations engine", done: true },
-  { date: "Q3 2026", text: "Connected sources, relationship intelligence, anomaly detection", done: true },
-  { date: "Q4 2026", text: "ML-based risk prediction, trend forecasting, proactive compliance", done: false },
-  { date: "2027", text: "PWA with offline, integration marketplace, multi-language AI", done: false },
+  { date: "Shipped", text: "Document intelligence, readiness scoring & the compliance time machine", done: true },
+  { date: "Shipped", text: "No-code record designer, multi-function modules & onboarding from your own documents", done: true },
+  { date: "Shipped", text: "Connected sources, vendor risk, anomaly detection & meeting intelligence", done: true },
+  { date: "Shipped", text: "Visual evidence — photos & video become operational records", done: true },
+  { date: "Coming", text: "Photo → digital form, predictive risk & one-click evidence packs", done: false },
+  { date: "Coming", text: "Third-party & auditor portal, broad visual compliance & a no-code automation builder", done: false },
+  { date: "Coming", text: "Mobile field app, AR-guided assistance & conversational analytics", done: false },
+  { date: "Later", text: "Single sign-on, integration marketplace & multi-language", done: false },
 ];
 
 export function Traction() {

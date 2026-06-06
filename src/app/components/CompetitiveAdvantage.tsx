@@ -4,12 +4,12 @@ import { Check, X, AlertTriangle } from "lucide-react";
 const rows = [
   { cap: "Natural language data entry", animo: ["check", "AI form filling via chat"], legacy: ["x", "Manual CRUD forms"], dms: ["x", "Manual"] },
   { cap: "24/7 autonomous monitoring", animo: ["check", "AI agent"], legacy: ["x", "Manual periodic checks"], dms: ["x", "None"] },
-  { cap: "Document quality + VLM", animo: ["check", "Vision language models"], legacy: ["x", "Basic OCR only"], dms: ["x", "None"] },
+  { cap: "Reads & validates any document", animo: ["check", "Documents & images"], legacy: ["x", "Basic scanning only"], dms: ["x", "None"] },
   { cap: "Dual-mode compliance", animo: ["check", "Third-party + Internal ops"], legacy: ["warn", "One mode only"], dms: ["x", "None"] },
   { cap: "Human-in-the-loop AI", animo: ["check", "4-level authority gates"], legacy: ["warn", "All-auto or nothing"], dms: ["x", "None"] },
   { cap: "Immutable evidence trail", animo: ["check", "Append-only + attribution"], legacy: ["warn", "Editable records"], dms: ["x", "None"] },
-  { cap: "Relationship intelligence", animo: ["check", "10-source vendor scoring"], legacy: ["warn", "Limited"], dms: ["x", "None"] },
-  { cap: "Multi-industry modules", animo: ["check", "Config-driven, any vertical"], legacy: ["x", "Single-industry"], dms: ["x", "None"] },
+  { cap: "Relationship intelligence", animo: ["check", "6-source vendor scoring"], legacy: ["warn", "Limited"], dms: ["x", "None"] },
+  { cap: "Multi-function & multi-industry", animo: ["check", "Config-driven, any function"], legacy: ["x", "Single-purpose"], dms: ["x", "None"] },
   { cap: "Time-to-value", animo: ["check", "~2 min AI onboarding"], legacy: ["x", "Weeks of setup"], dms: ["x", "None"] },
 ];
 
