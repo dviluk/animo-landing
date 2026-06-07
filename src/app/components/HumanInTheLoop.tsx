@@ -1,37 +1,29 @@
 import { ScrollReveal } from "./ScrollReveal";
-import { CheckCircle, AlertTriangle, Eye, ShieldOff } from "lucide-react";
+import { CheckCircle, UserCheck, ShieldOff } from "lucide-react";
 
 const levels = [
   {
     Icon: CheckCircle,
-    name: "Authoritative",
-    desc: "AI executes immediately",
-    example: "Search, retrieve, classify, validate",
+    name: "Does it on its own",
+    desc: "The safe, routine stuff — reading, filing, checking, searching.",
+    example: "Read a document, file it, check it against your standard, run a search.",
     color: "#10B981",
     bg: "#10B981",
   },
   {
-    Icon: AlertTriangle,
-    name: "Threshold-Based",
-    desc: "AI acts if conditions met; human can override",
-    example: "Auto-validate document if confidence > 95%",
+    Icon: UserCheck,
+    name: "Checks with you first",
+    desc: "Anything that leaves the building or changes a status.",
+    example: "Send a follow-up email, approve a document, close out an action.",
     color: "#F59E0B",
     bg: "#F59E0B",
   },
   {
-    Icon: Eye,
-    name: "Advisory",
-    desc: "AI drafts; human approves before execution",
-    example: "Draft follow-up email, propose corrective action",
-    color: "#4F46E5",
-    bg: "#4F46E5",
-  },
-  {
     Icon: ShieldOff,
-    name: "Forbidden",
-    desc: "AI never allowed, regardless of context",
+    name: "Never, ever",
+    desc: "The calls only a person should make — no exceptions.",
     example:
-      "Declare compliance status, modify requirements, fabricate evidence",
+      "Declare you compliant, change your rules, or make up evidence.",
     color: "#F43F5E",
     bg: "#F43F5E",
   },
@@ -39,7 +31,7 @@ const levels = [
 
 export function HumanInTheLoop() {
   return (
-    <section className="bg-[#FAFBFF] py-24">
+    <section id="technology" className="bg-[#FAFBFF] py-24">
       <div className="max-w-5xl mx-auto px-6">
         <ScrollReveal>
           <div className="text-center mb-16">
@@ -56,9 +48,8 @@ export function HumanInTheLoop() {
               className="text-[#64748B] text-[17px] max-w-2xl mx-auto"
               style={{ fontFamily: "Inter" }}
             >
-              Animo's AI agents have clearly defined authority boundaries. They
-              know what they can do, what needs approval, and what they must
-              never do.
+              Animo's AI has clear rules about what it can do on its own, what it
+              checks with you first, and what it must never touch.
             </p>
           </div>
         </ScrollReveal>
@@ -109,8 +100,9 @@ export function HumanInTheLoop() {
               className="text-[#64748B] text-[15px] leading-[1.7]"
               style={{ fontFamily: "Inter" }}
             >
-              Every AI action is logged with full attribution — who triggered it
-              (human or AI), what decision was made, when, and why.{" "}
+              Every action is logged — who did it (you or the AI), what changed,
+              when, and why. And your data stays yours — every organization is a
+              hard boundary, never shared with anyone else.{" "}
               <span className="text-[#1E293B] font-[600]">
                 Your audit trail is always complete.
               </span>

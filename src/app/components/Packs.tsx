@@ -14,24 +14,15 @@ const packs = [
   { name: "Food Safety & Agriculture", blurb: "GFSI/HACCP programs, third-party certs, operational logs, visual evidence.", skin: "Compliance" },
   { name: "Manufacturing Quality", blurb: "Quality management, third-party quality, inspections and corrective actions.", skin: "Quality Assurance" },
   { name: "Pharma & Life Sciences", blurb: "Good-practice records, batch documentation, CAPA and document control.", skin: "Compliance" },
-  { name: "Medical Devices", blurb: "Device quality management, design records and inspection readiness.", skin: "Quality Assurance" },
+  { name: "Healthcare & Clinics", blurb: "Accreditation, credentialing and policy compliance.", skin: "Compliance", featured: true },
   { name: "Construction & Contractor Safety", blurb: "Subcontractor compliance, site inspections and incident tracking.", skin: "Field Ops / EHS" },
   { name: "Facilities & Property", blurb: "Recurring inspections, vendor documents and work orders.", skin: "Field Ops / EHS" },
-  { name: "Energy & Utilities", blurb: "Environmental compliance and asset inspections.", skin: "Field Ops / EHS" },
   { name: "Hospitality & Restaurants", blurb: "Brand standards, health checks and multi-site operations.", skin: "Quality Assurance" },
-  { name: "Retail Operations", blurb: "Store operations, vendor compliance and brand reviews.", skin: "Field Ops / EHS" },
   { name: "Logistics & Cold Chain", blurb: "Temperature and condition compliance, carrier documents.", skin: "Compliance" },
-  { name: "Aviation & Fleet", blurb: "Maintenance records and crew credentialing.", skin: "Compliance" },
-  { name: "Cannabis", blurb: "Seed-to-sale compliance and state reporting.", skin: "Compliance" },
   { name: "Law Firm Matter Governance", blurb: "Conflicts, deadlines, client intake and discovery assembly.", skin: "Governance", featured: true },
   { name: "Financial Controls", blurb: "Internal controls, client due-diligence and exam readiness.", skin: "Governance" },
   { name: "Third-Party / Vendor Risk", blurb: "Collect, validate, score and keep any external party in good standing.", skin: "Vendor Risk", featured: true },
-  { name: "Procurement & Third-Party Quality", blurb: "Third-party scorecards, document collection and reviews.", skin: "Vendor Risk" },
-  { name: "ISO / SOC 2 Certification", blurb: "Frameworks, crosswalks, readiness scoring and audit packs.", skin: "Audit & Assurance" },
-  { name: "ESG & Sustainability", blurb: "Evidence collection and assurance reporting.", skin: "Audit & Assurance" },
-  { name: "Government & Grant Compliance", blurb: "Grant obligations, evidence and audit.", skin: "Audit & Assurance" },
-  { name: "Healthcare & Clinics", blurb: "Accreditation, credentialing and policy compliance.", skin: "Compliance", featured: true },
-  { name: "HR & Workforce Compliance", blurb: "Training, credentials and policy attestation.", skin: "Governance" },
+  { name: "ISO / SOC 2 Certification", blurb: "Frameworks, crosswalks, readiness scoring and evidence packs.", skin: "Audit & Assurance" },
 ];
 
 export function Packs() {
@@ -45,11 +36,11 @@ export function Packs() {
         <ScrollReveal>
           <div className="text-center mb-14">
             <h2 className="text-[36px] lg:text-[44px] font-[800] text-[#F8FAFC] mb-4" style={{ fontFamily: "Inter" }}>
-              Built for any function.{" "}
-              <span className="bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] bg-clip-text text-transparent">Any industry.</span>
+              A starting point for{" "}
+              <span className="bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] bg-clip-text text-transparent">almost any team.</span>
             </h2>
             <p className="text-[#94A3B8] text-[16px] max-w-2xl mx-auto" style={{ fontFamily: "Inter" }}>
-              Animo configures to your standard. Here's where teams put it to work — and you can shape a new one in minutes.
+              Every one is a starting point you can shape in minutes — Animo builds it around your own documents and your standard.
             </p>
           </div>
         </ScrollReveal>

@@ -22,7 +22,7 @@ export function CTA() {
             className="text-[36px] lg:text-[48px] font-[800] text-[#F8FAFC] mb-4 leading-tight"
             style={{ fontFamily: "Inter" }}
           >
-            Let's Show You What Autonomous Compliance Looks Like
+            See what always-ready looks like
           </h2>
           <p
             className="text-[#94A3B8] text-[17px] mb-10"
@@ -56,10 +56,10 @@ export function CTA() {
           >
             Or reach us at{" "}
             <a
-              href="mailto:hello@animoanimo.com"
+              href="mailto:hello@animoanimo.mx"
               className="text-[#06B6D4] hover:underline"
             >
-              hello@animoanimo.com
+              hello@animoanimo.mx
             </a>
           </p>
 

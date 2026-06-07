@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Github } from "lucide-react";
+import logo from "../../assets/icons/animo_horizontal_light.svg";
 
 const columns = [
   { title: "Product", links: ["Features", "Pricing", "Integrations", "Roadmap", "Documentation"] },
@@ -13,9 +14,9 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-6 gap-12 mb-12">
           <div className="md:col-span-2">
-            <span className="text-[20px] font-[700] text-white tracking-tight" style={{ fontFamily: "Inter" }}>animo</span>
+            <img src={logo} alt="Animo" className="h-7 w-auto" />
             <p className="text-[#64748B] text-[14px] mt-3 max-w-xs leading-[1.6]" style={{ fontFamily: "Inter" }}>
-              The Operating System for Compliance Intelligence. AI agents that monitor, reason, and act.
+              Compliance that keeps itself up to date. AI that watches, checks, and keeps you ready.
             </p>
             <div className="flex gap-3 mt-5">
               {[Linkedin, Twitter, Github].map((Icon, i) => (

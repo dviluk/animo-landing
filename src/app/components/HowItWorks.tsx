@@ -5,7 +5,7 @@ const steps = [
   {
     icon: Upload,
     title: "Point Animo at your documents",
-    desc: "Upload your SOPs, policies, and forms — or pull them from Google Drive or OneDrive.",
+    desc: "Upload your standard operating procedures (SOPs), policies, and forms — or pull them from Google Drive or OneDrive.",
     color: "#4F46E5",
   },
   {
@@ -23,7 +23,7 @@ const steps = [
   {
     icon: Zap,
     title: "Agents take over",
-    desc: "24/7 monitoring begins — readiness checks, document validation, and follow-ups, with human approval gates.",
+    desc: "24/7 monitoring begins — readiness checks, document validation, and follow-ups, and it checks with you before anything important.",
     color: "#10B981",
   },
 ];
@@ -36,7 +36,7 @@ export function HowItWorks() {
           <div className="text-center mb-16">
             <h2 className="text-[36px] lg:text-[44px] font-[800] text-[#1E293B] mb-4" style={{ fontFamily: "Inter" }}>
               From zero to running in{" "}
-              <span className="bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] bg-clip-text text-transparent">minutes</span>
+              <span className="bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] bg-clip-text text-transparent">about 2 minutes</span>
             </h2>
             <p className="text-[#64748B] text-[17px] max-w-2xl mx-auto" style={{ fontFamily: "Inter" }}>
               No blank templates. Animo reads what you already have and builds your setup around it.

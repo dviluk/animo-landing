@@ -15,7 +15,7 @@ export function Hero() {
         <div className="lg:col-span-3 space-y-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#F59E0B]/40 bg-[#F59E0B]/10 text-[#F59E0B] text-[13px] font-[500]" style={{ fontFamily: "Inter" }}>
-              <Rocket size={14} /> AI Assurance Platform
+              <Rocket size={14} /> AI for compliance teams
             </span>
           </motion.div>
 
@@ -26,9 +26,9 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            Set the standard.{" "}
+            Set your standard.{" "}
             <span className="bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] bg-clip-text text-transparent">
-              We'll keep it.
+              Stay ready to prove it.
             </span>
           </motion.h1>
 
@@ -39,9 +39,9 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            The AI that upholds your rules, validates the evidence, and collects what's
-            missing — your own records and the documents you're waiting on. 24/7, with
-            human-in-the-loop safety.
+            Animo is an AI assistant for compliance. Tell it the standard you're held to —
+            and it keeps your documents, records, and inspections in line with it, chases
+            down what's missing or expiring, and keeps your proof ready the day anyone asks.
           </motion.p>
 
           <motion.div className="flex flex-wrap gap-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }}>
@@ -54,7 +54,7 @@ export function Hero() {
           </motion.div>
 
           <motion.p className="text-[#64748B] text-[13px]" style={{ fontFamily: "Inter" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
-            For teams who get inspected or asked to prove it.
+            For teams that get inspected or asked to prove they're doing it right.
           </motion.p>
           {/* <motion.div className="flex gap-3 flex-wrap" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }}>
             {Array.from({ length: 5 }).map((_, i) => (
@@ -85,16 +85,16 @@ export function Hero() {
                   </div>
                 </div>
                 <div>
-                  <div className="text-white text-[14px] font-[600]" style={{ fontFamily: "Inter" }}>Compliance Readiness</div>
+                  <div className="text-white text-[14px] font-[600]" style={{ fontFamily: "Inter" }}>How ready you are</div>
                   <div className="text-[#10B981] text-[12px]" style={{ fontFamily: "Inter" }}>+4.1% this month</div>
                 </div>
               </div>
 
               <div className="grid grid-cols-3 gap-2 mb-5">
                 {[
-                  { label: "Obligations Tracked", value: "1,847" },
-                  { label: "Active Agents", value: "9" },
-                  { label: "Avg Response", value: "2.3s" },
+                  { label: "Items tracked", value: "1,847" },
+                  { label: "Working for you", value: "9" },
+                  { label: "Avg reply", value: "2.3s" },
                 ].map((m) => (
                   <div key={m.label} className="bg-[#0F172A]/60 rounded-lg p-3 border border-white/5">
                     <div className="text-[#64748B] text-[10px]" style={{ fontFamily: "Inter" }}>{m.label}</div>

@@ -15,10 +15,10 @@ const showcases = [
     icon: Utensils,
     title: "Food Safety & Agriculture",
     skins: ["Compliance", "Quality Assurance", "Field Ops / EHS"],
-    scenario: "A fresh-produce operation running a GFSI program across multiple sites and dozens of third parties.",
+    scenario: "A fresh-produce operation running a GFSI (Global Food Safety Initiative, a food-safety standard) program across multiple sites and dozens of third parties.",
     runs: [
       "Keeps third-party certificates collected, validated, and current — and collects what's missing.",
-      "Digitizes temperature, sanitation, and pest-control logs with an immutable trail; a breach auto-creates a corrective action.",
+      "Digitizes temperature, sanitation, and pest-control logs with a trail nobody can change; a breach auto-creates a corrective action.",
       "Turns photos and video of sanitation and field activity into records, automatically.",
       "Holds one readiness score across the program — and assembles the evidence pack in minutes.",
     ],
@@ -31,7 +31,7 @@ const showcases = [
     runs: [
       "Keeps subcontractor insurance, licenses, and certifications in good standing.",
       "Digitizes site inspections and incidents; a failed check escalates to resolution.",
-      "Flags PPE and site-safety issues from a photo for your team to confirm.",
+      "Flags missing safety gear and site-safety issues from a photo for your team to confirm.",
       "Keeps every site inspection-ready, with the evidence assembled on demand.",
     ],
   },
@@ -106,6 +106,15 @@ export function Showcase() {
             </ScrollReveal>
           ))}
         </div>
+
+        <ScrollReveal>
+          <p className="text-center text-[#64748B] text-[14px] mt-12" style={{ fontFamily: "Inter" }}>
+            …and many more. Don't see yours?{" "}
+            <a href="#contact" className="text-[#06B6D4] font-[600] hover:underline">
+              Describe it — Animo builds your setup from your own documents.
+            </a>
+          </p>
+        </ScrollReveal>
       </div>
     </section>
   );

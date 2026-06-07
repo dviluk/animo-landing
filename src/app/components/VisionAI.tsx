@@ -67,7 +67,7 @@ function ComplianceMockup() {
       </div>
 
       {/* Detection boxes */}
-      <DetectionBox label="PPE Compliant" icon="check" color="#10B981" confidence={97} x="10%" y="25%" w="22%" h="45%" delay={0.3} />
+      <DetectionBox label="Safety gear OK" icon="check" color="#10B981" confidence={97} x="10%" y="25%" w="22%" h="45%" delay={0.3} />
       <DetectionBox label="Fall Protection Violation" icon="x" color="#EF4444" confidence={94} x="55%" y="15%" w="35%" h="30%" delay={0.6} />
       <DetectionBox label="Signage Obstructed" icon="warn" color="#F59E0B" confidence={82} x="38%" y="60%" w="28%" h="22%" delay={0.9} />
 
@@ -155,7 +155,7 @@ function GuidanceMockup() {
     <div ref={ref} className="relative w-full bg-gradient-to-br from-[#1a1a2e] to-[#16213e] rounded-xl overflow-hidden border border-white/10">
       {/* Phone frame header */}
       <div className="px-3 py-2 border-b border-white/10 flex items-center justify-between">
-        <span className="text-[10px] text-white/50" style={{ fontFamily: "JetBrains Mono, monospace" }}>AR MODE</span>
+        <span className="text-[10px] text-white/50" style={{ fontFamily: "JetBrains Mono, monospace" }}>Augmented Reality</span>
         <div className="flex items-center gap-1">
           <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
           <span className="text-[9px] text-emerald-400" style={{ fontFamily: "JetBrains Mono, monospace" }}>LIVE</span>
@@ -212,9 +212,9 @@ const scenarios = [
 ];
 
 const cards = [
-  { Icon: Camera, title: "Visual Compliance Verification", coming: false, desc: "Point your camera at a site, a floor, or a piece of equipment — Animo analyzes the photo against your standards and flags what looks wrong: missing PPE, a blocked exit, an expired label — for your team to review and confirm.", Mockup: ComplianceMockup },
-  { Icon: Video, title: "Activity Recognition & Auto-Logging", coming: false, desc: "Upload a video and Animo watches what's happening. A sanitation procedure being completed? Equipment maintenance underway? It recognizes the activity, timestamps it, and creates the operational record automatically — no manual data entry.", Mockup: ActivityMockup },
-  { Icon: Wrench, title: "AI-Guided Visual Assistance", coming: true, desc: "A technician faces a machine they've never seen. They point their phone at it — Animo identifies the equipment, pulls up the manual, and overlays step-by-step repair instructions on the live feed. AR-style guidance from your knowledge base.", Mockup: GuidanceMockup },
+  { Icon: Camera, title: "Point your camera, catch problems", coming: false, desc: "Point your camera at a site, a floor, or a piece of equipment — Animo checks the photo against your standard and flags what looks wrong: missing safety gear, a blocked exit, an expired label — for your team to review and confirm.", Mockup: ComplianceMockup },
+  { Icon: Video, title: "Turn a video into a record", coming: false, desc: "Upload a video and Animo watches what's happening. A cleaning being completed? Equipment maintenance underway? It recognizes the activity, timestamps it, and creates the record automatically — no manual data entry.", Mockup: ActivityMockup },
+  { Icon: Wrench, title: "Step-by-step help on your phone", coming: true, desc: "A technician faces a machine they've never seen. They point their phone at it — Animo identifies the equipment, pulls up the manual, and overlays step-by-step repair instructions on the live view. On-screen guidance, pulled from your own manuals.", Mockup: GuidanceMockup },
 ];
 
 export function VisionAI() {
@@ -273,13 +273,13 @@ export function VisionAI() {
         {/* Header */}
         <ScrollReveal>
           <h2 className="text-center text-[36px] lg:text-[48px] font-[800] text-white mb-4" style={{ fontFamily: "Inter" }}>
-            AI That <span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 bg-clip-text text-transparent">Sees</span> What You Can't
+            Your camera becomes <span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 bg-clip-text text-transparent">proof</span>
           </h2>
           <p className="text-center text-[17px] text-white/50 max-w-3xl mx-auto mb-4 leading-[1.7]" style={{ fontFamily: "Inter" }}>
             Point a camera at your operation and Animo checks it against your standards — turning a photo or a video into an evidence record, automatically. Recognize an activity, flag an issue, log it without anyone typing a thing.
           </p>
-          <p className="text-center text-[14px] text-amber-400/60 italic mb-16" style={{ fontFamily: "Inter" }}>
-            "Your Eyes on Every Site. Every Process. Every Moment."
+          <p className="text-center text-[14px] text-amber-400/60 mb-16" style={{ fontFamily: "Inter" }}>
+            Same engine — a photo or a video becomes a record and a piece of proof, just like a document.
           </p>
         </ScrollReveal>
 
@@ -319,47 +319,6 @@ export function VisionAI() {
           ))}
         </div>
 
-        {/* Scenario strip */}
-        <ScrollReveal>
-          <div className="mb-20">
-            <h3 className="text-[14px] font-[600] text-white/40 tracking-wider text-center mb-6" style={{ fontFamily: "Inter" }}>
-              REAL-WORLD SCENARIOS
-            </h3>
-            <div className="relative">
-              {canScrollLeft && (
-                <button onClick={() => scroll("left")} className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/20 transition-colors">
-                  <ChevronLeft size={16} />
-                </button>
-              )}
-              {canScrollRight && (
-                <button onClick={() => scroll("right")} className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/20 transition-colors">
-                  <ChevronRight size={16} />
-                </button>
-              )}
-              <div ref={scrollRef} className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide px-2" style={{ scrollbarWidth: "none" }}>
-                {scenarios.map((s, i) => (
-                  <motion.div
-                    key={s.q}
-                    className="shrink-0 w-[300px] bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-xl p-4 hover:border-amber-500/20 transition-colors"
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.12, duration: 0.5 }}
-                  >
-                    <div className="flex items-center gap-2 mb-2">
-                      <s.Icon size={16} className="text-amber-400 shrink-0" />
-                      <span className="text-[13px] font-[700] text-white" style={{ fontFamily: "Inter" }}>"{s.q}"</span>
-                    </div>
-                    <div className="inline-block px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-[10px] text-amber-400 font-[600] mb-2" style={{ fontFamily: "JetBrains Mono, monospace" }}>
-                      {s.industry}
-                    </div>
-                    <p className="text-[12px] text-white/40 leading-[1.6]" style={{ fontFamily: "Inter" }}>{s.desc}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
 
         {/* Bottom callout */}
         <ScrollReveal>
@@ -367,7 +326,7 @@ export function VisionAI() {
             <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-2xl p-8">
               <Shield className="w-8 h-8 text-amber-400 mx-auto mb-4" />
               <p className="text-[15px] text-white/70 leading-[1.8]" style={{ fontFamily: "Inter" }}>
-                Every visual analysis creates an <span className="text-white font-[700]">immutable evidence record</span> — the original image/video, AI's analysis, confidence scores, detected items, and any auto-created logs. Your visual compliance trail is as defensible as every other record in Animo.
+                Every visual analysis creates <span className="text-white font-[700]">a record nobody can change</span> — the original image/video, AI's analysis, confidence scores, detected items, and any auto-created logs. Your visual compliance trail is as defensible as every other record in Animo.
               </p>
             </div>
           </div>
@@ -377,9 +336,9 @@ export function VisionAI() {
         <ScrollReveal>
           <div className="max-w-3xl mx-auto bg-black/40 border border-white/5 rounded-xl p-5 overflow-x-auto">
             <div className="text-[11px] text-white/25 leading-[2]" style={{ fontFamily: "JetBrains Mono, monospace" }}>
-              <div><span className="text-amber-400/50">Inputs:</span> phone camera, uploaded photos &amp; video</div>
-              <div><span className="text-amber-400/50">Output:</span> evidence records, flagged issues, inspection-ready trail</div>
-              <div><span className="text-amber-400/50">Coming:</span> live site cameras, drone footage, AR-guided assistance</div>
+              <div><span className="text-amber-400/50">What it takes:</span> phone camera, uploaded photos &amp; video</div>
+              <div><span className="text-amber-400/50">What you get:</span> records, flagged issues, an inspection-ready trail</div>
+              <div><span className="text-amber-400/50">Coming:</span> live site cameras, drones, on-screen guidance</div>
             </div>
           </div>
         </ScrollReveal>

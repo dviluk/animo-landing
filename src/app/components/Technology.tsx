@@ -17,7 +17,7 @@ const pillars = [
   {
     icon: ScrollText,
     title: "A history nobody can rewrite",
-    desc: "Every record and change is append-only and attributed — who did what, when, and why.",
+    desc: "Every record and change is kept and signed — who did what, when, and why. Nothing is ever erased.",
     color: "#F59E0B",
   },
   {

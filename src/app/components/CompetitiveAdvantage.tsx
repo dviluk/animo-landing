@@ -2,15 +2,15 @@ import { ScrollReveal } from "./ScrollReveal";
 import { Check, X, AlertTriangle } from "lucide-react";
 
 const rows = [
-  { cap: "Natural language data entry", animo: ["check", "AI form filling via chat"], legacy: ["x", "Manual CRUD forms"], dms: ["x", "Manual"] },
-  { cap: "24/7 autonomous monitoring", animo: ["check", "AI agent"], legacy: ["x", "Manual periodic checks"], dms: ["x", "None"] },
-  { cap: "Reads & validates any document", animo: ["check", "Documents & images"], legacy: ["x", "Basic scanning only"], dms: ["x", "None"] },
-  { cap: "Dual-mode compliance", animo: ["check", "Third-party + Internal ops"], legacy: ["warn", "One mode only"], dms: ["x", "None"] },
-  { cap: "Human-in-the-loop AI", animo: ["check", "4-level authority gates"], legacy: ["warn", "All-auto or nothing"], dms: ["x", "None"] },
-  { cap: "Immutable evidence trail", animo: ["check", "Append-only + attribution"], legacy: ["warn", "Editable records"], dms: ["x", "None"] },
-  { cap: "Relationship intelligence", animo: ["check", "6-source vendor scoring"], legacy: ["warn", "Limited"], dms: ["x", "None"] },
-  { cap: "Multi-function & multi-industry", animo: ["check", "Config-driven, any function"], legacy: ["x", "Single-purpose"], dms: ["x", "None"] },
-  { cap: "Time-to-value", animo: ["check", "~2 min AI onboarding"], legacy: ["x", "Weeks of setup"], dms: ["x", "None"] },
+  { cap: "Ask in plain words (chat, email, voice)", animo: ["check", "Yes"], legacy: ["x", "No — manual forms"], dms: ["x", "No"] },
+  { cap: "Works on its own, around the clock", animo: ["check", "Yes — always watching"], legacy: ["x", "Only when you run it"], dms: ["x", "No"] },
+  { cap: "Reads and checks documents and photos", animo: ["check", "Yes"], legacy: ["x", "Basic scanning only"], dms: ["x", "No"] },
+  { cap: "Everything in one place (documents, records, daily operations)", animo: ["check", "Yes"], legacy: ["warn", "One job only"], dms: ["x", "Storage only"] },
+  { cap: "Asks your OK before acting", animo: ["check", "Yes"], legacy: ["warn", "All-or-nothing"], dms: ["x", "No"] },
+  { cap: "Keeps records nobody can secretly change", animo: ["check", "Yes"], legacy: ["warn", "Records can be edited"], dms: ["x", "No"] },
+  { cap: "Gives each partner a health score", animo: ["check", "Yes"], legacy: ["warn", "Limited"], dms: ["x", "No"] },
+  { cap: "Adapts to your standard", animo: ["check", "Yes"], legacy: ["x", "One-size only"], dms: ["x", "No"] },
+  { cap: "Up and running fast", animo: ["check", "About 2 minutes"], legacy: ["x", "Weeks of setup"], dms: ["x", "No"] },
 ];
 
 function StatusIcon({ type }: { type: string }) {
@@ -36,10 +36,10 @@ export function CompetitiveAdvantage() {
             <table className="w-full text-left">
               <thead>
                 <tr className="border-b-2 border-[#E2E8F0]">
-                  <th className="py-4 pr-4 text-[14px] font-[600] text-[#1E293B]" style={{ fontFamily: "Inter" }}>Capability</th>
+                  <th className="py-4 pr-4 text-[14px] font-[600] text-[#1E293B]" style={{ fontFamily: "Inter" }}>What you want</th>
                   <th className="py-4 px-4 text-[14px] font-[600] text-[#4F46E5]" style={{ fontFamily: "Inter" }}>Animo</th>
-                  <th className="py-4 px-4 text-[14px] font-[600] text-[#64748B]" style={{ fontFamily: "Inter" }}>Legacy Tools</th>
-                  <th className="py-4 px-4 text-[14px] font-[600] text-[#64748B]" style={{ fontFamily: "Inter" }}>Generic DMS</th>
+                  <th className="py-4 px-4 text-[14px] font-[600] text-[#64748B]" style={{ fontFamily: "Inter" }}>Old software</th>
+                  <th className="py-4 px-4 text-[14px] font-[600] text-[#64748B]" style={{ fontFamily: "Inter" }}>Basic file storage</th>
                 </tr>
               </thead>
               <tbody>

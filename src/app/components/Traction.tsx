@@ -5,19 +5,15 @@ import { Check, Clock } from "lucide-react";
 const metrics = [
   { value: 170, suffix: "+", label: "Automated actions" },
   { value: 47, suffix: "", label: "Record types (or design your own)" },
-  { value: 6, suffix: "", label: "Assurance functions" },
+  { value: 6, suffix: "", label: "ways to use it" },
   { value: 92, suffix: "%", label: "Avg compliance readiness" },
 ];
 
 const milestones = [
-  { date: "Shipped", text: "Document intelligence, readiness scoring & the compliance time machine", done: true },
-  { date: "Shipped", text: "No-code record designer, multi-function modules & onboarding from your own documents", done: true },
-  { date: "Shipped", text: "Connected sources, vendor risk, anomaly detection & meeting intelligence", done: true },
-  { date: "Shipped", text: "Visual evidence — photos & video become operational records", done: true },
-  { date: "Coming", text: "Photo → digital form, predictive risk & one-click evidence packs", done: false },
-  { date: "Coming", text: "Third-party & auditor portal, broad visual compliance & a no-code automation builder", done: false },
-  { date: "Coming", text: "Mobile field app, AR-guided assistance & conversational analytics", done: false },
-  { date: "Later", text: "Single sign-on, integration marketplace & multi-language", done: false },
+  { date: "Shipped", text: "Reads your documents, scores readiness, and shows where you stood on any past date", done: true },
+  { date: "Shipped", text: "Connects your email & drive, turns photos & video into records, and watches for risk", done: true },
+  { date: "Coming", text: "Snap a paper form into a digital one, spot risk early, one-click evidence packs", done: false },
+  { date: "Coming", text: "A portal for third parties & auditors, and a mobile app for the field", done: false },
 ];
 
 export function Traction() {

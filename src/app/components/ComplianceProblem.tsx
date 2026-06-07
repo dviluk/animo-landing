@@ -1,34 +1,34 @@
 import { ScrollReveal } from "./ScrollReveal";
 import { AnimatedCounter } from "./AnimatedCounter";
-import { Scale, FileCheck, Award, Building } from "lucide-react";
+import { Clock, AlertTriangle, FolderSearch, HelpCircle } from "lucide-react";
 
 const cards = [
   {
-    icon: Scale,
-    title: "Legal Compliance",
-    desc: "Following laws set by governments and regulatory bodies",
-    example: "Tax obligations, labor laws, environmental regulations",
+    icon: Clock,
+    title: "Chasing people for paperwork",
+    desc: "Certificates and insurance that lapsed months ago — and you're the last to know.",
+    example: "The follow-up that never ends.",
     color: "#4F46E5",
   },
   {
-    icon: FileCheck,
-    title: "Regulatory Compliance",
-    desc: "Meeting requirements from industry-specific regulatory agencies",
-    example: "Drug safety (FDA), financial reporting (SEC), workplace safety (OSHA)",
-    color: "#06B6D4",
-  },
-  {
-    icon: Award,
-    title: "Standards Compliance",
-    desc: "Adhering to established standards and specifications",
-    example: "ISO 9001, SOC 2, SQF, GFSI, LEED, HIPAA",
+    icon: AlertTriangle,
+    title: "Gaps you find too late",
+    desc: "The missing piece always turns up the week of the inspection.",
+    example: "Always a surprise, never on your terms.",
     color: "#F59E0B",
   },
   {
-    icon: Building,
-    title: "Organizational Compliance",
-    desc: "Following internal policies, codes of conduct, and SOPs",
-    example: "Workplace safety procedures, vendor qualification, training requirements",
+    icon: FolderSearch,
+    title: "Proof nobody can find",
+    desc: "Paper, spreadsheets, inboxes, drives. The evidence exists… somewhere.",
+    example: "Hours lost assembling it by hand.",
+    color: "#06B6D4",
+  },
+  {
+    icon: HelpCircle,
+    title: "No straight answer",
+    desc: "Ask \"are we ready right now?\" and nobody actually knows.",
+    example: "Confidence by guesswork.",
     color: "#7C3AED",
   },
 ];
@@ -39,11 +39,10 @@ export function ComplianceProblem() {
       <div className="max-w-7xl mx-auto px-6">
         <ScrollReveal>
           <p className="text-center text-[22px] lg:text-[28px] text-[#1E293B] leading-[1.6] max-w-3xl mx-auto mb-16" style={{ fontFamily: "Inter", fontWeight: 400 }}>
-            Compliance isn't just a legal checkbox. It's the foundation of{" "}
-            <span className="font-[700]">safety</span>,{" "}
-            <span className="font-[700]">consistency</span>,{" "}
-            <span className="font-[700]">accountability</span>, and{" "}
-            <span className="font-[700]">trust</span>.
+            Most teams don't fail their standard on purpose. They fail because a document{" "}
+            <span className="font-[700]">expired</span>, a record went{" "}
+            <span className="font-[700]">missing</span>, or nobody noticed until the day of the{" "}
+            <span className="font-[700]">inspection</span>.
           </p>
         </ScrollReveal>
 
@@ -84,8 +83,8 @@ export function ComplianceProblem() {
 
         <ScrollReveal>
           <p className="text-center text-[#64748B] text-[16px] max-w-2xl mx-auto leading-[1.7]" style={{ fontFamily: "Inter" }}>
-            Whether you're tracking vendor certificates, managing operational inspections, meeting regulatory deadlines,
-            or proving you're ready — you need a system that never sleeps.
+            Documents from other people, or records your own team creates — you need
+            something that never looks away.
           </p>
         </ScrollReveal>
       </div>

@@ -5,11 +5,9 @@ import { SolutionOverview } from "./components/SolutionOverview";
 import { FeatureDeepDive } from "./components/FeatureDeepDive";
 import { UniversalCompliance } from "./components/UniversalCompliance";
 import { Showcase } from "./components/Showcase";
-import { Packs } from "./components/Packs";
 import { HowItWorks } from "./components/HowItWorks";
 import { HumanInTheLoop } from "./components/HumanInTheLoop";
 import { VisionAI } from "./components/VisionAI";
-import { Technology } from "./components/Technology";
 import { CompetitiveAdvantage } from "./components/CompetitiveAdvantage";
 import { Traction } from "./components/Traction";
 import { Pricing } from "./components/Pricing";
@@ -26,11 +24,9 @@ export default function App() {
       <FeatureDeepDive />
       <UniversalCompliance />
       <Showcase />
-      <Packs />
       <HowItWorks />
       <HumanInTheLoop />
       <VisionAI />
-      <Technology />
       <CompetitiveAdvantage />
       <Traction />
       <Pricing />

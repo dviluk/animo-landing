@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { ScrollReveal } from "./ScrollReveal";
 import {
   ShieldCheck,
@@ -26,32 +27,32 @@ const oldWay = [
 ];
 
 const newWay = [
-  "AI tracks every obligation, deadline, and gap automatically",
-  "Agents follow up for you and collect what's missing",
-  "Digital records with immutable evidence trails",
-  "Always inspection-ready — real-time readiness scoring",
-  "Proactive alerts before anything expires or degrades",
+  "AI tracks every rule, deadline, and gap automatically",
+  "Animo follows up for you and collects what's missing",
+  "Digital records with a trail nobody can change",
+  "Always ready — a live score of where you stand",
+  "Heads-up before anything expires or slips",
 ];
 
 const pillars = [
   {
     icon: ShieldCheck,
-    title: "Third-Party Compliance",
-    desc: "Collect, validate, and keep your third parties and providers in good standing. Animo requests what's owed, validates it, and flags what's about to expire.",
-    coming: "a secure portal where they upload evidence themselves",
+    title: "Collects and checks your documents",
+    desc: "Vendor and contractor certificates, insurance, and licenses. Animo asks for what's owed, validates it, and flags what's about to expire — automatically.",
+    coming: "a secure portal where they upload it themselves",
     color: "#4F46E5",
   },
   {
     icon: ClipboardCheck,
-    title: "Internal Operations",
-    desc: "The same engine on your own records, SOPs, and inspections — digitized, with state-driven lifecycles and an immutable evidence trail.",
+    title: "Digitizes your own records",
+    desc: "Your inspections, logs, checklists, and reports — organized and kept in a record nobody can quietly change.",
     coming: null,
     color: "#06B6D4",
   },
   {
     icon: BrainCircuit,
-    title: "Intelligence",
-    desc: "Animo watches email, calendar, documents, and connected sources to surface risk, anomalies, and deadlines — before they become a problem.",
+    title: "Watches for what's coming",
+    desc: "Risks and deadlines across your email, calendar, and files — surfaced before they become problems.",
     coming: null,
     color: "#7C3AED",
   },
@@ -67,104 +68,61 @@ function FlowArrow() {
   );
 }
 
-/* Diagram A — the engine at a glance: evidence -> Animo -> proof */
+/* Flow — Collect / Check / Act / Prove (one solution, end to end) */
 function EngineGlance() {
-  const inputs = [
-    { icon: FileText, label: "Documents" },
-    { icon: ClipboardList, label: "Records" },
-    { icon: Camera, label: "Photos & video" },
-    { icon: Mail, label: "Email & Drive" },
-  ];
-  const outputs = [
-    { icon: Gauge, label: "Readiness score" },
-    { icon: FolderCheck, label: "Gaps collected" },
-    { icon: History, label: "Inspection-ready trail" },
+  const steps = [
+    {
+      key: "COLLECT",
+      sub: "What you already have",
+      color: "#06B6D4",
+      items: ["Certs & licenses", "Contracts & insurance", "Policies, records & reports", "Photos, emails & files"],
+    },
+    {
+      key: "CHECK",
+      sub: "Reads & checks each one against your standard",
+      color: "#4F46E5",
+      items: ["Reads it", "Files it", "Checks the details"],
+    },
+    {
+      key: "ACT",
+      sub: "Does the legwork, around the clock",
+      color: "#7C3AED",
+      items: ["Flags what's expiring", "Chases what's missing", "Turns any gap into a tracked fix", "Spots risks early"],
+    },
+    {
+      key: "PROVE",
+      sub: "What you get",
+      color: "#10B981",
+      items: ["One score: how ready you are right now", "A record nobody can change", "Your evidence pack, in minutes"],
+    },
   ];
   return (
     <ScrollReveal>
       <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 lg:p-8 mb-16">
-        <div className="flex flex-col lg:flex-row items-stretch gap-4">
-          <div className="flex-1 bg-[#0F172A]/40 border border-white/5 rounded-xl p-5">
-            <div className="text-[#64748B] text-[11px] mb-3" style={{ fontFamily: "JetBrains Mono" }}>
-              YOUR EVIDENCE
-            </div>
-            <div className="grid grid-cols-2 gap-2">
-              {inputs.map((it) => (
-                <div key={it.label} className="flex items-center gap-2 bg-white/5 rounded-lg px-3 py-2">
-                  <it.icon size={14} className="text-[#06B6D4] shrink-0" />
-                  <span className="text-[#E2E8F0] text-[12px]" style={{ fontFamily: "Inter" }}>{it.label}</span>
+        <div className="flex flex-col lg:flex-row items-stretch gap-3">
+          {steps.map((s, i) => (
+            <Fragment key={s.key}>
+              <div className="flex-1 bg-[#0F172A]/40 border rounded-xl p-5" style={{ borderColor: `${s.color}30` }}>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="w-2 h-2 rounded-full shrink-0" style={{ background: s.color }} />
+                  <span className="text-[13px] font-[700]" style={{ color: s.color, fontFamily: "JetBrains Mono" }}>{s.key}</span>
                 </div>
-              ))}
-            </div>
-          </div>
-
-          <FlowArrow />
-
-          <div className="flex-1 relative">
-            <div className="absolute -inset-2 bg-gradient-to-r from-[#4F46E5]/20 to-[#06B6D4]/20 rounded-2xl blur-xl -z-10" />
-            <div className="h-full bg-gradient-to-br from-[#4F46E5]/15 to-[#06B6D4]/10 border border-[#4F46E5]/30 rounded-xl p-5 flex flex-col justify-center">
-              <div className="text-white text-[16px] font-[700] mb-3" style={{ fontFamily: "Inter" }}>Animo</div>
-              <div className="flex flex-wrap gap-1.5">
-                {["reads", "validates", "scores", "collects", "acts"].map((v) => (
-                  <span
-                    key={v}
-                    className="px-2 py-0.5 rounded bg-white/10 text-[#E2E8F0] text-[11px]"
-                    style={{ fontFamily: "JetBrains Mono" }}
-                  >
-                    {v}
-                  </span>
-                ))}
+                <div className="text-[#94A3B8] text-[11px] mb-3 leading-[1.5]" style={{ fontFamily: "Inter" }}>{s.sub}</div>
+                <div className="space-y-1.5">
+                  {s.items.map((it) => (
+                    <div key={it} className="flex items-start gap-2 bg-white/5 rounded-lg px-3 py-2">
+                      <Check size={13} className="mt-0.5 shrink-0" style={{ color: s.color }} />
+                      <span className="text-[#E2E8F0] text-[12px] leading-[1.4]" style={{ fontFamily: "Inter" }}>{it}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          </div>
-
-          <FlowArrow />
-
-          <div className="flex-1 bg-[#10B981]/5 border border-[#10B981]/20 rounded-xl p-5">
-            <div className="text-[#10B981] text-[11px] mb-3" style={{ fontFamily: "JetBrains Mono" }}>
-              PROOF
-            </div>
-            <div className="space-y-2">
-              {outputs.map((it) => (
-                <div key={it.label} className="flex items-center gap-2 bg-white/5 rounded-lg px-3 py-2">
-                  <it.icon size={14} className="text-[#10B981] shrink-0" />
-                  <span className="text-[#E2E8F0] text-[12px]" style={{ fontFamily: "Inter" }}>{it.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+              {i < steps.length - 1 && <FlowArrow />}
+            </Fragment>
+          ))}
         </div>
         <div className="text-center mt-5 text-[#64748B] text-[12px]" style={{ fontFamily: "Inter" }}>
-          Everything measured against <span className="text-[#94A3B8] font-[600]">your standard</span>.
-        </div>
-      </div>
-    </ScrollReveal>
-  );
-}
-
-/* Diagram B — two modes converge into one score + one trail */
-function TwoModesBridge() {
-  return (
-    <ScrollReveal>
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
-        <div className="flex flex-col gap-2 w-full sm:w-auto">
-          <div className="flex items-center gap-2 bg-[#4F46E5]/10 border border-[#4F46E5]/20 rounded-lg px-4 py-2.5">
-            <ShieldCheck size={15} className="text-[#4F46E5] shrink-0" />
-            <span className="text-[#E2E8F0] text-[13px]" style={{ fontFamily: "Inter" }}>Third-party evidence</span>
-          </div>
-          <div className="flex items-center gap-2 bg-[#06B6D4]/10 border border-[#06B6D4]/20 rounded-lg px-4 py-2.5">
-            <ClipboardCheck size={15} className="text-[#06B6D4] shrink-0" />
-            <span className="text-[#E2E8F0] text-[13px]" style={{ fontFamily: "Inter" }}>Your own operations</span>
-          </div>
-        </div>
-        <FlowArrow />
-        <div className="bg-[#10B981]/10 border border-[#10B981]/25 rounded-xl px-5 py-4 text-center">
-          <div className="text-[#10B981] text-[14px] font-[700]" style={{ fontFamily: "Inter" }}>
-            One readiness score
-          </div>
-          <div className="text-[#94A3B8] text-[12px]" style={{ fontFamily: "Inter" }}>
-            and one inspection-ready trail
-          </div>
+          Everything measured against <span className="text-[#94A3B8] font-[600]">your standard</span> — and it asks before anything leaves your hands.
         </div>
       </div>
     </ScrollReveal>
@@ -184,23 +142,20 @@ export function SolutionOverview() {
         <ScrollReveal>
           <div className="text-center mb-14">
             <h2 className="text-[36px] lg:text-[44px] font-[800] text-[#F8FAFC] mb-4" style={{ fontFamily: "Inter" }}>
-              One engine.{" "}
+              One solution for{" "}
               <span className="bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] bg-clip-text text-transparent">
-                Both sides of compliance.
+                everything you have to prove.
               </span>
             </h2>
             <p className="text-[#94A3B8] text-[17px] max-w-2xl mx-auto" style={{ fontFamily: "Inter" }}>
-              Animo doesn't care what industry you're in. It cares about one thing: are your obligations met,
-              your evidence valid, and your gaps closed?
+              A certificate from a vendor, an inspection your own team ran, a deadline you can't miss — it all
+              lives in one place, checked against your standard, with one answer always ready: are you ready?
             </p>
           </div>
         </ScrollReveal>
 
-        {/* Diagram A — the engine at a glance */}
+        {/* Flow — Collect / Check / Act / Prove */}
         <EngineGlance />
-
-        {/* Diagram B — two modes, one proof */}
-        <TwoModesBridge />
 
         {/* 3 pillars */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
@@ -262,7 +217,7 @@ export function SolutionOverview() {
               <div className="flex items-center gap-2 bg-[#10B981]/10 border border-[#10B981]/20 rounded-lg p-3">
                 <Zap size={16} className="text-[#10B981]" />
                 <span className="text-[#10B981] text-[14px] font-[700]" style={{ fontFamily: "JetBrains Mono" }}>minutes</span>
-                <span className="text-[#E2E8F0] text-[13px]" style={{ fontFamily: "Inter" }}>to intelligent coverage</span>
+                <span className="text-[#E2E8F0] text-[13px]" style={{ fontFamily: "Inter" }}>to know where you stand</span>
               </div>
             </div>
           </ScrollReveal>

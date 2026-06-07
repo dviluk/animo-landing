@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logo from "../../assets/icons/animo_horizontal_light.svg";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,15 +27,8 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
-          <div className="relative">
-            <span className="text-[22px] font-[700] text-white tracking-tight" style={{ fontFamily: "Inter" }}>
-              <span className="relative">
-                a<span className="absolute -top-0.5 left-0 w-3 h-3 border-t border-l border-[#06B6D4] rounded-tl opacity-60" />
-              </span>
-              nimo
-            </span>
-          </div>
+        <a href="#" className="flex items-center">
+          <img src={logo} alt="Animo" className="h-8 w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">

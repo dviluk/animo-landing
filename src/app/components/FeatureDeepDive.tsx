@@ -16,9 +16,9 @@ import {
 const features = [
   {
     icon: MessageSquare,
-    title: "Talk to Your Compliance Data",
-    desc: "Natural language everything. Chat, email, or voice — ask questions, create records, run reports, trigger actions. One AI brain handles it all.",
-    badge: "Hundreds of automated actions",
+    title: "Just ask — in plain English",
+    desc: "Chat, email, or voice — ask questions, create records, run reports, kick off tasks. One AI handles it all, in your own words.",
+    badge: "hundreds of things it can do for you",
     mockup: (
       <div className="space-y-3">
         <div className="bg-[#4F46E5]/20 border border-[#4F46E5]/30 rounded-lg p-3">
@@ -63,27 +63,27 @@ const features = [
   },
   {
     icon: Bot,
-    title: "AI Agents running 24/7. Zero Coffee Breaks.",
-    desc: "Autonomous agents that check compliance daily, validate documents on upload, draft follow-up emails, and prepare evidence packages — all while you sleep.",
-    badge: "Human-in-the-Loop Safety Gates",
+    title: "Works 24/7. Zero coffee breaks.",
+    desc: "Animo works in the background — checks your compliance daily, validates documents the moment they arrive, drafts follow-ups, and assembles evidence — and asks before anything important.",
+    badge: "it checks with you first",
     mockup: (
       <div className="space-y-2">
         {[
           {
             status: "bg-[#10B981]",
-            text: "ComplianceChecker completed daily scan — 3 gaps found across 2 sites",
+            text: "Daily check done — 3 gaps found across 2 sites",
           },
           {
             status: "bg-[#F59E0B]",
-            text: "OutreachCoordinator drafted 5 follow-up emails (awaiting your approval)",
+            text: "Drafted 5 follow-up emails — waiting for your OK",
           },
           {
             status: "bg-[#10B981]",
-            text: "DocumentValidator auto-validated 12 uploads against requirements",
+            text: "Checked 12 new uploads against your standard",
           },
           {
             status: "bg-[#06B6D4]",
-            text: "EvidencePreparer assembled Q1 evidence package — 94% complete",
+            text: "Your evidence pack is 94% ready",
           },
         ].map((item, i) => (
           <div
@@ -112,7 +112,7 @@ const features = [
     mockup: (
       <div className="space-y-3">
         <div className="flex flex-wrap gap-2">
-          {["DPI Check", "Legibility", "Orientation"].map((t, i) => (
+          {["Checks the image is clear", "Right-side up", "Reads the details"].map((t, i) => (
             <span
               key={i}
               className="px-2.5 py-1 rounded-md bg-[#10B981]/10 border border-[#10B981]/20 text-[#10B981] text-[11px] flex items-center gap-1"
@@ -127,7 +127,7 @@ const features = [
             className="text-[#4F46E5] text-[11px] mb-1"
             style={{ fontFamily: "Inter" }}
           >
-            Classification
+            What it is
           </div>
           <div
             className="text-[#E2E8F0] text-[13px]"
@@ -166,8 +166,8 @@ const features = [
   },
   {
     icon: BarChart3,
-    title: "Not Pass/Fail. Granular, Evidence-Backed, Actionable.",
-    desc: "Real-time readiness scores across every requirement set — whether it's ISO 9001, OSHA, SOC 2, or your own internal standards. See exactly where you stand and what to fix first.",
+    title: "See exactly where you stand, on any date.",
+    desc: "A live readiness score for every standard you follow — ISO 9001 (an international quality-management standard), OSHA (U.S. workplace-safety rules from the Occupational Safety and Health Administration), SOC 2 (a data-security standard), or your own — so you know what to fix first.",
     badge: "Compliance Time Machine™",
     mockup: (
       <div className="space-y-3">
@@ -202,9 +202,9 @@ const features = [
           </div>
           <div className="space-y-1 flex-1">
             {[
-              { label: "Framework A", pct: 97 },
-              { label: "Framework B", pct: 88 },
-              { label: "Framework C", pct: 91 },
+              { label: "ISO 9001", pct: 97 },
+              { label: "OSHA", pct: 88 },
+              { label: "SOC 2", pct: 91 },
             ].map((f) => (
               <div key={f.label} className="flex items-center gap-2">
                 <span
@@ -245,9 +245,9 @@ const features = [
   },
   {
     icon: Settings,
-    title: "Your Operational Evidence. Digitized. Immutable.",
-    desc: "47 record types out of the box — inspections, logs, checklists, incident reports, training records, corrective actions — or design your own in plain language. Each with state-driven lifecycles and append-only correction history.",
-    badge: "Immutable Evidence Trail",
+    title: "Your records, digitized — and tamper-proof",
+    desc: "47 record types out of the box — inspections, logs, checklists, incident reports, training records — or design your own in plain language. Each one follows your approval steps, and every change is logged, never erased.",
+    badge: "a record nobody can change",
     mockup: (
       <div className="space-y-3">
         <div className="flex items-center gap-3 bg-[#10B981]/10 border border-[#10B981]/20 rounded-lg p-3">
@@ -295,9 +295,9 @@ const features = [
   },
   {
     icon: Radar,
-    title: "Your AI-Powered Radar. Always Watching.",
-    desc: "Relationship risk scores, communication anomaly detection, meeting intelligence, smart follow-ups, and regulatory change monitoring — all delivered to the right person at the right level.",
-    badge: "6-Source Risk Scoring",
+    title: "Catches what you'd miss",
+    desc: "Animo watches for the things you'd miss — a partner who's gone quiet, a meeting to prep for, a new regulation that affects you — and gets each one to the right person.",
+    badge: "a health score for every partner",
     mockup: (
       <div className="space-y-2">
         <div className="flex items-center justify-between bg-[#0F172A]/40 rounded-lg p-3 border border-white/5">
@@ -305,7 +305,7 @@ const features = [
             className="text-[#E2E8F0] text-[12px]"
             style={{ fontFamily: "Inter" }}
           >
-            Relationship Health
+            Partner health
           </span>
           <span
             className="text-[#F59E0B] text-[14px] font-[700]"
@@ -338,7 +338,7 @@ const features = [
             style={{ fontFamily: "Inter" }}
           >
             <Bell size={11} className="shrink-0" /> New regulation impacts 2 of
-            your requirement sets
+            your standards
           </span>
         </div>
       </div>
@@ -356,9 +356,9 @@ export function FeatureDeepDive() {
               className="text-[36px] lg:text-[44px] font-[800] text-[#1E293B] mb-4"
               style={{ fontFamily: "Inter" }}
             >
-              The AI{" "}
+              What the AI{" "}
               <span className="bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] bg-clip-text text-transparent">
-                Advantage
+                does for you
               </span>
             </h2>
           </div>
