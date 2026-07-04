@@ -111,7 +111,7 @@ export function Showcase() {
           <p className="text-center text-[#64748B] text-[14px] mt-12" style={{ fontFamily: "Inter" }}>
             …and many more. Don't see yours?{" "}
             <a href="#contact" className="text-[#06B6D4] font-[600] hover:underline">
-              Describe it — Animo builds your setup from your own documents.
+              Describe it — Animo drafts your setup from your own documents, and you publish what's right.
             </a>
           </p>
         </ScrollReveal>

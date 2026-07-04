@@ -326,7 +326,7 @@ export function VisionAI() {
             <div className="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-2xl p-8">
               <Shield className="w-8 h-8 text-amber-400 mx-auto mb-4" />
               <p className="text-[15px] text-white/70 leading-[1.8]" style={{ fontFamily: "Inter" }}>
-                Every visual analysis creates <span className="text-white font-[700]">a record nobody can change</span> — the original image/video, AI's analysis, confidence scores, detected items, and any auto-created logs. Your visual compliance trail is as defensible as every other record in Animo.
+                Once you approve a visual record, it's <span className="text-white font-[700]">sealed — nobody can quietly change it</span>: the original image/video, AI's analysis, confidence scores, detected items, and any auto-created logs are locked together. Your visual compliance trail is as defensible as every other record in Animo.
               </p>
             </div>
           </div>

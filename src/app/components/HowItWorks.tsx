@@ -11,7 +11,7 @@ const steps = [
   {
     icon: Sparkles,
     title: "AI proposes your setup",
-    desc: "It reads them and proposes your record types, requirements, and dashboards — each cited to its source. You review and publish.",
+    desc: "It reads them and proposes your record types and requirements, drawn from your own documents — not blank templates. You review and publish; nothing goes live on its own.",
     color: "#06B6D4",
   },
   {
@@ -22,8 +22,8 @@ const steps = [
   },
   {
     icon: Zap,
-    title: "Agents take over",
-    desc: "24/7 monitoring begins — readiness checks, document validation, and follow-ups, and it checks with you before anything important.",
+    title: "Agents take over — on your terms",
+    desc: "24/7 monitoring begins — readiness checks, document validation, and follow-ups. It checks with you before anything leaves your hands, until you decide, action by action, to let it act on its own.",
     color: "#10B981",
   },
 ];

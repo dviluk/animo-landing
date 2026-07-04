@@ -11,6 +11,8 @@ import {
   AlertTriangle,
   Calendar,
   Bell,
+  SlidersHorizontal,
+  Lock,
 } from "lucide-react";
 
 const features = [
@@ -105,9 +107,46 @@ const features = [
     ),
   },
   {
+    icon: SlidersHorizontal,
+    title: "You decide what it does on its own.",
+    desc: "Supervised by default. Turn on autonomy one action at a time — auto-send replies, auto-file documents — each behind a plain-language risk you acknowledge first. Some things stay human forever: Animo never declares you compliant and never changes your standards without you. Every automatic action is logged and attributed to the AI.",
+    badge: "autonomy with a floor",
+    mockup: (
+      <div className="space-y-2">
+        {[
+          { label: "Email replies", mode: "Hold for review", color: "#F59E0B" },
+          { label: "Document intake", mode: "Autonomous", color: "#10B981" },
+          { label: "Standards changes", mode: "Ask first", color: "#06B6D4" },
+        ].map((d) => (
+          <div
+            key={d.label}
+            className="flex items-center justify-between bg-[#0F172A]/40 rounded-lg p-3 border border-white/5"
+          >
+            <span className="text-[#E2E8F0] text-[12px]" style={{ fontFamily: "Inter" }}>
+              {d.label}
+            </span>
+            <span
+              className="px-2 py-0.5 rounded text-[11px] font-[600]"
+              style={{ background: `${d.color}20`, color: d.color, fontFamily: "JetBrains Mono" }}
+            >
+              {d.mode}
+            </span>
+          </div>
+        ))}
+        <div className="flex items-center gap-2 bg-[#1E293B]/60 rounded-lg p-3 border border-white/10">
+          <Lock size={12} className="text-[#64748B] shrink-0" />
+          <span className="text-[#94A3B8] text-[11px]" style={{ fontFamily: "Inter" }}>
+            Declare compliance · change your standards —{" "}
+            <span className="text-[#64748B] font-[600]">always a human</span>
+          </span>
+        </div>
+      </div>
+    ),
+  },
+  {
     icon: FileSearch,
     title: "Upload Anything. AI Does the Rest.",
-    desc: "Certificates, permits, licenses, inspection reports, training records — AI reads it, classifies it, extracts the key fields, checks it against your requirements, and flags what's wrong. In seconds.",
+    desc: "Certificates, permits, licenses, inspection reports, training records — AI reads it, classifies it, extracts the key fields, checks it against your requirements, and flags what's wrong. In seconds. And when it can't read something confidently, it holds the document for a person instead of guessing.",
     badge: "Reads any document or image",
     mockup: (
       <div className="space-y-3">

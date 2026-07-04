@@ -122,7 +122,7 @@ function EngineGlance() {
           ))}
         </div>
         <div className="text-center mt-5 text-[#64748B] text-[12px]" style={{ fontFamily: "Inter" }}>
-          Everything measured against <span className="text-[#94A3B8] font-[600]">your standard</span> — and it asks before anything leaves your hands.
+          Everything measured against <span className="text-[#94A3B8] font-[600]">your standard</span> — and <span className="text-[#94A3B8] font-[600]">you decide what it does on its own</span>: it asks before anything leaves your hands, until you say otherwise.
         </div>
       </div>
     </ScrollReveal>
