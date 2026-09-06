@@ -1,6 +1,13 @@
 import { ScrollReveal } from "./ScrollReveal";
 import { Star } from "lucide-react";
 
+export interface PackExample {
+  name: string;
+  blurb: string;
+  skin: string;
+  featured?: boolean;
+}
+
 const skinColors: Record<string, string> = {
   Compliance: "#4F46E5",
   "Quality Assurance": "#06B6D4",
@@ -10,7 +17,7 @@ const skinColors: Record<string, string> = {
   "Field Ops / EHS": "#F43F5E",
 };
 
-const packs = [
+export const packs: PackExample[] = [
   { name: "Food Safety & Agriculture", blurb: "GFSI/HACCP programs, third-party certs, operational logs, visual evidence.", skin: "Compliance" },
   { name: "Manufacturing Quality", blurb: "Quality management, third-party quality, inspections and corrective actions.", skin: "Quality Assurance" },
   { name: "Pharma & Life Sciences", blurb: "Good-practice records, batch documentation, CAPA and document control.", skin: "Compliance" },

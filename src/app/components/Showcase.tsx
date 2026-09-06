@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { ScrollReveal } from "./ScrollReveal";
-import { Utensils, HardHat, Briefcase, Check } from "lucide-react";
+import { Utensils, HardHat, Briefcase, Check, ChevronDown } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
+import { packs } from "./Packs";
 
 const skinColors: Record<string, string> = {
   Compliance: "#4F46E5",
@@ -50,6 +53,8 @@ const showcases = [
 ];
 
 export function Showcase() {
+  const [showAllExamples, setShowAllExamples] = useState(false);
+
   return (
     <section id="solutions" className="bg-[#FAFBFF] py-24">
       <div className="max-w-6xl mx-auto px-6">
@@ -106,6 +111,46 @@ export function Showcase() {
             </ScrollReveal>
           ))}
         </div>
+
+        <ScrollReveal>
+          <div className="mt-10 border-t border-[#E2E8F0] pt-6">
+            <button
+              type="button"
+              onClick={() => setShowAllExamples((open) => !open)}
+              aria-expanded={showAllExamples}
+              className="mx-auto flex items-center gap-2 rounded-full border border-[#CBD5E1] bg-white px-4 py-2 text-[13px] font-[600] text-[#334155] hover:border-[#94A3B8]"
+              style={{ fontFamily: "Inter" }}
+            >
+              {showAllExamples ? "Show fewer examples" : `Show all ${packs.length} starter examples`}
+              <ChevronDown size={16} className={`transition-transform ${showAllExamples ? "rotate-180" : ""}`} />
+            </button>
+
+            <AnimatePresence initial={false}>
+              {showAllExamples && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.24 }}
+                  className="overflow-hidden"
+                >
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-6">
+                    {packs.map((pack) => (
+                      <div key={pack.name} className="bg-white border border-[#E2E8F0] rounded-xl p-4">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="w-2 h-2 rounded-full shrink-0" style={{ background: skinColors[pack.skin] }} />
+                          <span className="text-[11px]" style={{ color: skinColors[pack.skin], fontFamily: "JetBrains Mono" }}>{pack.skin}</span>
+                        </div>
+                        <h4 className="text-[14px] font-[700] text-[#1E293B] mb-1" style={{ fontFamily: "Inter" }}>{pack.name}</h4>
+                        <p className="text-[#64748B] text-[12px] leading-[1.5]" style={{ fontFamily: "Inter" }}>{pack.blurb}</p>
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        </ScrollReveal>
 
         <ScrollReveal>
           <p className="text-center text-[#64748B] text-[14px] mt-12" style={{ fontFamily: "Inter" }}>
