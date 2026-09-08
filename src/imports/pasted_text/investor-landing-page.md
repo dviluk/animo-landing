@@ -1,3 +1,5 @@
+> **Superseded (2026-09-05).** This April 2026 brief is kept for history only. The canonical landing/positioning spec is `animo-agents/docs/INVESTOR-LANDING-PAGE-PROMPT-v3.md`: the product is **Animo** (AnimoAnimo is the developer organization), "chase" and "while you sleep" are banned words, and autonomy is described as "you decide what it does on its own" with a human-only floor, not as "autonomous agents".
+
 # Investor Landing Page Generation Prompt
 
 > **Purpose:** Use this prompt with an AI code generator (v0, Bolt, Lovable, Claude Artifacts, etc.) to produce a single-page React landing page for Animo, targeting investors.
